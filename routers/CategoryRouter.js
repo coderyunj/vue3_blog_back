@@ -66,7 +66,7 @@ router.put("/_token/update", async (req, res) => {
 })
 
 // 添加接口
-router.post("/api/_token/add", async (req, res) => {
+router.post("/_token/add", async (req, res) => {
 
     let { name } = req.body
     const insert_sql = "INSERT INTO `category` (`id`,`name`) VALUES (?,?)"
